@@ -5,17 +5,16 @@ public class TIS_Ticket_Test {
 
   private static boolean test_TicketConstructor(){
     TIS_Ticket ticket = new TIS_Ticket(t,a,p);
-    return(( t == ticket.getType())&&( a == ticket.getAge())
-    &&( p == ticket.getPrice()));
+    return t == ticket.getType() && a == ticket.getAge() && p == ticket.getPrice();
   }
 
   public static void main(String[] args){
 
     if (test_TicketConstructor()){
-    System.out.println("True");
+    System.out.println("test_TicketConstructor PASSED");
     }
     else {
-    System.out.println("False");
+    System.out.println("test_TicketConstructor FAILED");
     }
   }
 }

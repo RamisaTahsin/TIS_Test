@@ -1,6 +1,5 @@
 public class TIS_TransactionStatus_Test {
-
-  private static boolean test_TransactionStatus_Constructor(){
+  private static boolean test_TransactionStatus_Constructor() {
     boolean successful = true;
     String bank ="SEB";
 
@@ -8,7 +7,7 @@ public class TIS_TransactionStatus_Test {
     return true;
   }
 
-  private static boolean test_getSuccessful(){
+  private static boolean test_getSuccessful() {
     boolean successful = true;
     String bank = "SEB";
 
@@ -18,7 +17,7 @@ public class TIS_TransactionStatus_Test {
     return false;
   }
 
-  private static boolean test_getBank(){
+  private static boolean test_getBank() {
     boolean successful = true;
     String bank = "SEB";
 
@@ -28,22 +27,21 @@ public class TIS_TransactionStatus_Test {
     return false;
   }
 
-  public static void main(String[] args){
+  public static void main(String[] args) {
 
     if(test_TransactionStatus_Constructor())
-      System.out.println("test_TransactionStatus_Constructor True");
+      System.out.println("test_TransactionStatus_Constructor PASSED");
     else
-      System.out.println("test_TransactionStatus_Constructor Failed");
+      System.out.println("test_TransactionStatus_Constructor FAILED");
 
     if(test_getSuccessful())
-      System.out.println("test_getSuccessful True");
+      System.out.println("test_getSuccessful PASSED");
     else
-      System.out.println("test_getSuccessful Failed");
+      System.out.println("test_getSuccessful FAILED");
 
     if(test_getBank())
-      System.out.println("test_getBank True");
+      System.out.println("test_getBank PASSED");
     else
-      System.out.println("test_getBank Failed");
+      System.out.println("test_getBank FAILED");
   }
-
 }

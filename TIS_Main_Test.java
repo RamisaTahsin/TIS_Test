@@ -1,20 +1,17 @@
 public class TIS_Main_Test {
   private static TIS_Main main = new TIS_Main();
 
-  private static boolean test_AccountNr(){
-  //main.reset();
-  String s1 = "xy z";
-  String s2 = "x-yz";
-  return ( ("xyz" == main.setAccountNr(s1)) && ("xyz" == main.setAccountNr(s2)) );
+  private static boolean test_AccountNr() {
+    String s1 = "xy z";
+    String s2 = "x-yz";
+    return main.setAccountNr(s1).equals("xyz") && main.setAccountNr(s2).equals("xyz");
   }
 
-  public static void main(String[] args){
-      int totalAmountOfErros = 0;
-      if(test_AccountNr()){
-        System.out.println("accountNr: " + "PASSED");
-      } else {
-        System.out.println("accountNr: " + "FAILED");
-        totalAmountOfErros++;
-      }
+  public static void main(String[] args) {
+    if(test_AccountNr()) {
+      System.out.println("test_AccountNr PASSED");
+    } else {
+      System.out.println("test_AccountNr FAILED");
+    }
   }
 }
