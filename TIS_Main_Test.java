@@ -1,6 +1,7 @@
 public class TIS_Main_Test {
   private static TIS_Main main = new TIS_Main();
 
+  //Test of removal of "-" and spaces in accountnumber input.
   private static boolean test_AccountNr() {
     String s1 = "xy z";
     String s2 = "x-yz";
