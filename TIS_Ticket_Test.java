@@ -3,6 +3,7 @@ public class TIS_Ticket_Test {
   private static String a = "Between 18-64 years";
   private static double p = 22.50;
 
+  //Test of the making of a ticket.
   private static boolean test_TicketConstructor(){
     TIS_Ticket ticket = new TIS_Ticket(t,a,p);
     return t == ticket.getType() && a == ticket.getAge() && p == ticket.getPrice();

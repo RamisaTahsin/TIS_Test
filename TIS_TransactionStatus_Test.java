@@ -1,4 +1,5 @@
 public class TIS_TransactionStatus_Test {
+  //Test of different attributes we will recieve from MHS_Main.
   private static boolean test_TransactionStatus_Constructor() {
     boolean successful = true;
     String bank ="SEB";
